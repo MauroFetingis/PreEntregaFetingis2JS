@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(245, 245, 245); 
+}
+#productos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    
+}
+.producto{
+    margin: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+.producto:hover{
+    opacity: 0.7;
+}
+.producto img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    margin: 5px;
+}
+.listaProd{
+    margin: 40px 0 0 40px;
+}
+.log{
+    width: 140px;
+    height: auto;
+    border-radius: 0.6em;
+}
+.log:hover{
+
+    background-color: rgb(39, 120, 190) ;
+    transition: 1.2s;
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="style.css">
+    <title>principal</title>
+</head>
+<body>
+    <div id="productos">
+        <div class="producto" onclick="agregarProducto('Airpods pro')">
+            <img src="/img/airpods.jpg" alt="Airpods pro">
+            <p>Producto de la tienda</p>
+            <p>Precio: $$$</p>
+        </div>
+        <div class="producto" onclick="agregarProducto('Apple tv')">
+            <img src="/img/appletv.jpg" alt="Apple tv">
+            <p>Producto de la tienda</p>
+            <p>Precio: $$$</p>
+        </div>
+        <div class="producto" onclick="agregarProducto('Apple tv 2')">
+            <img src="/img/appletv2.jpg" alt="Apple tv 2">
+            <p>Producto de la tienda</p>
+            <p>Precio: $$$</p>
+        </div>
+        <div class="producto" onclick="agregarProducto('Galaxy Phone')">
+            <img src="/img/galaxy.jpg" alt="Galaxy Phone">
+            <p>Producto de la tienda</p>
+            <p>Precio: $$$</p>
+        </div>
+        <div class="producto" onclick="agregarProducto('Galaxy phone 2')">
+            <img src="/img/galaxy2.png" alt="Galaxy phone 2">
+            <p>Producto de la tienda</p>
+            <p>Precio: $$$</p>
+        </div>
+        <div class="producto" onclick="agregarProducto('Ipad')">
+            <img src="/img/ipadA.jpg" alt="Ipad">
+            <p>Producto de la tienda</p>
+            <p>Precio: $$$</p>
+        </div>
+    </div>
+    <div class="listaProd">
+        <h2 class="text-xs font-semibold">Lista de Productos Agregados:</h2>
+        <ul id="listaProductos"></ul>
+        <p>Precio total: $ <span id="precioFinal">0</span></p>
+        <button class="log text-xl font-bold" id="refresh">Vaciar carrito</button>
+        <button class="pagar text-xl font-bold" id="pagar">Pagar</button>
+    </div>
+        <footer>
+        <p class="text-xl"">&copy; Cellspot 2024</p>
+    </footer>
+    <script src="/src/src2/script.js"></script>
+</body>
+</html>
