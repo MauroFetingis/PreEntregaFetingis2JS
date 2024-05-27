@@ -61,15 +61,17 @@
 // }
 const precioTotal = document.getElementById('precioFinal')
 const productosAgregados = [];
+let totalCompra = 0
 let refresh = document.getElementById("refresh");
 refresh.addEventListener("click", _ => {location.reload();
 })
 const pagar = document.getElementById("pagar");
 pagar.addEventListener("click", _ => {
     const confirmacion = confirm("¿Desea finalizar su compra?");
-    if (confirmacion){ alert("Gracias por elegirnos!");}
-    productosAgregados.innerHTML = "";
-    precioTotal = 0;
+    if (confirmacion){ alert("Gracias por elegirnos!");
+    location.reload()
+    }
+    
 })
 
 
