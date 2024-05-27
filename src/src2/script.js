@@ -1,6 +1,5 @@
 // function Calculadora{
 
-//     let calcu = prompt("decime cuál es tu pregunta")
 //     const Productos = [
 //         "id": 1, "class": "articulo", "nombre": "articulo de tienda de celulares", "cantidad": 1, "desc": "articulo de tienda de celulares", "precio": 1200, "img":"./img/airpods.jpg";
 //         "id": 2, "class": "articulo", "nombre": "articulo de tienda de celulares", "cantidad": 1, "desc": "articulo de tienda de celulares", "precio": 1100, "img": "./img/appletv.jpg";
@@ -65,12 +64,16 @@ const productosAgregados = [];
 let refresh = document.getElementById("refresh");
 refresh.addEventListener("click", _ => {location.reload();
 })
-let pagar = document.getElementById("pagar");
-let finalCompra = pagar.addEventListener("click", _ =>{confirm("Desea finalizar su compra?")})
-if (finalCompra){alert("Gracias por elegirnos")}
+const pagar = document.getElementById("pagar");
+pagar.addEventListener("click", _ => {
+    const confirmacion = confirm("¿Desea finalizar su compra?");
+    if (confirmacion){ alert("Gracias por elegirnos!");}
+    productosAgregados.innerHTML = "";
+    precioTotal = 0;
+})
 
-// let finalCompra = confirm("Desea finalizar su compra?")
-// if (finalCompra){alert("Gracias por elegirnos")}
+
+
         function agregarProducto(id) {
             const confirmacion = confirm("¿Deseas agregar este producto a la lista?");
             if (confirmacion) {
@@ -88,3 +91,4 @@ if (finalCompra){alert("Gracias por elegirnos")}
                 lista.appendChild(item);
             });
         }
+
